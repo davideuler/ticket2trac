@@ -1,15 +1,17 @@
 ticket2trac
 ===========
 
-Example
+## Example
 
-Usage:
+#Add a single ticket:
 
-ticket2trac.py [options] /path/to/trac/installation 'Ticket summary'
+python ticket2trac.py [options] /path/to/trac/installation 'Ticket summary'
 For a full list of command line options, simply run:
 
-ticket2trac.py --help
+python ticket2trac.py --help
 
+#Import tickets from text file
+python import2track.py demo.txt ../platform
 
-change log:
+#change log:
 07/25, 2013, Add Chinese support; to import tickets from a text file, each ticket a line.
