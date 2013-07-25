@@ -115,7 +115,8 @@ class Ticket2Trac():
             parser.error("incorrect number of arguments, use -h for help")
         
         #Add summary to the options so that it gets passed to the ticket later.
-        options.summary = args[1]
+        options.summary = unicode(args[1],"utf-8")
+
         
         return options, args
 
